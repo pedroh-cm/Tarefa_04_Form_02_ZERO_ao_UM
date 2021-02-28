@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/form_favicon_02.png">
+    <title>Formulário 2 em HTML</title>
+</head>
+
+<body>
+    <form action="">
+        <div class="campo">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="idade"><strong>Idade:</strong></label>
+            <input type="text" name="idade" id="idade" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="senha"><strong>Senha:</strong></label>
+            <input type="password" name="senha" id="senha" required>
+        </div><br>
+
+        <fieldset>
+            <legend><strong>Sexo:</strong></legend>
+            <div class="campo">
+                <label for="sexo">
+                    <input type="radio" name="sexo" id="M" required>M
+                </label>
+                <label for="sexo">
+                    <input type="radio" name="sexo" id="F">F
+                </label>
+            </div>
+        </fieldset><br>
+
+        <fieldset id= estado-check>
+            <legend><strong>Estado Civil:</strong></legend>
+            <div class="campo">
+                <label for="estado">
+                    <input type="radio" name="estado" id="solteiro" required>Solteiro:
+                </label>
+                <label for="estado">
+                    <input type="radio" name="estado" id="casado">Casado:
+                </label>
+                <label for="estado">
+                    <input type="radio" name="estado" id="enrolado">Enrolado:
+                </label>
+            </div>
+        </fieldset><br>
+
+        <fieldset id="comida-fav">
+            <legend><strong>Comida Favorita:</strong></legend>
+            <div class="campo">
+                <label for="comida1">
+                    <input type="checkbox" name="comida1" id="comida1" required>Macarrão:
+                </label><br>
+                <label for="comida2">
+                    <input type="checkbox" name="comida2" id="comida2">Frango:
+                </label><br>
+                <label for="comida3">
+                    <input type="checkbox" name="comida3" id="comida3">Arroz e Feijão:
+                </label>
+            </div>
+        </fieldset><br>
+
+        <div class="campo">
+            <label for="pesquisa"><strong>Selecione seu arquivo:</strong></label>
+            <input type="file" name="pesquisa" id="pesquisa">
+        </div><br>
+
+        <div class="campo">
+            <label for="cor"><strong>Selecione uma cor:</strong></label>
+            <input type="color" name="cor" id="cor" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="tempo"><strong>Selecione uma Hora:</strong></label>
+            <input type="time" name="tempo" id="tempo" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="num"><strong>Número:</strong></label>
+            <input type="number" name="num" id="num" required>
+        </div><br>
+
+
+        <div class="campo">
+            <input type="range" name="range" id="range" min="5" max="10">
+        </div><br>
+
+        <div class="campo">
+            <label for="data"><strong>Selecione uma Data:</strong></label>
+            <input type="date" name="data" id="data" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="dh"><strong>Selecione uma Data e Hora:</strong></label>
+            <input type="datetime" name="dh" id="dh" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="dhlocal"><strong>Selecione uma data, hora e local:</strong></label>
+            <input type="datetime-local" name="dhlocal" id="dhlocal" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="tempo"><strong>Selecione um horário:</strong></label>
+            <input type="time" name="tempo" id="tempo" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="semana"><strong>Selecione uma semana:</strong></label>
+            <input type="week" name="semana" id="semana" required>
+        </div><br>
+
+        <div class="campo">
+            <label for="mes"><strong>Selecione um mês:</strong></label>
+            <input type="month" name="mes" id="mes" required>
+        </div><br>
+
+        <div class="campo">
+            <textarea name="box" id="box" cols="30" rows="5"
+                placeholder="Caixa de texto com 30 colunas e 5 linhas....."></textarea>
+        </div><br>
+
+        <div id="check">
+            <select name="" id="cor" required>
+                <option value="selecione" selected disabled>Selecione....</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarelo">Amarelo</option>
+            </select>
+            <label for="url"><strong>URL:</strong></label>
+                <input type="url" name="url" id="url">
+        </div><br>
+
+
+        <button type="submit" class="botao">Enviar</button>
+        <button type="reset" class="botao">Redefinir</button>
+
+    </form>
+</body>
+
+</html>
